@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Konversi Suhu</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="description">
+        <p style="text-align: start">
+          Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik
+          tombol Konversi untuk mendapatkan hasil konversi dalam bentuk
+          Fahrenheit (&deg;F).
+        </p>
+      </div>
+      <div class="celcius">
+        <p>Celcius (&deg;C):</p>
+        <input type="text" id="celsius" />
+      </div>
+      <div class="tombol">
+        <button class="Konversi" onclick="convertToFahrenheit()">
+          Konversi
+        </button>
+        <button class="Reset" onclick="resetFields()">Reset</button>
+        <button class="Reverse" onclick="reverseConversion()">Reverse</button>
+      </div>
+      <div class="fahrenheit">
+        <p>Fahrenheit (&deg;F):</p>
+        <input type="text" id="fahrenheit" />
+      </div>
+      <div class="kalkulasi">
+        <p>Cara Kalkulasi:</p>
+        <input type="text" id="calculation" readonly />
+      </div>
+
+      <p style="text-align: start">Fahrenheit ke Celcius</p>
+      <hr />
+      <h3>Cara Konversi Dari Celcius (&degC) ke Fahrenheit (&degF)</h3>
+      <p style="text-align: start">
+        Suhu <span class="styled-s">S</span> dalam derajat Fahrenheit (&degF)
+        sama dengan suhu <span class="styled-s">S</span> dalam derajat Celsius
+        (&degC) kali 9/5 tambah 32.
+      </p>
+      <h4>
+        <span class="styled-s">S</span> <sub>(&degF)</sub> = (<span
+          class="styled-s"
+          >S</span
+        >
+        <sub>(&degC)</sub>x9/5) + 32
+      </h4>
+      <p>atau</p>
+      <h4>
+        <span class="styled-s">S</span> <sub>(&degF)</sub> = (<span
+          class="styled-s"
+          >S</span
+        >
+        <sub>(&degC)</sub>x1.8) + 32
+      </h4>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

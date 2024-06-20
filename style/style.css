@@ -1,0 +1,65 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9d689;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 50px;
+  padding: 40px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 800px;
+  text-align: center;
+}
+
+.description p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.celcius,
+.fahrenheit,
+.kalkulasi {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: calc(100% - 22px);
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.tombol button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #e0a75e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.tombol button:hover {
+  background-color: #973131;
+}
+
+.styled-s {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.container h4 {
+  color: grey;
+}
